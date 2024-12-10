@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard de Ventas - Coca-Cola</title>
+    <meta name="description" content="Panel de control para el seguimiento de ventas de Coca-Cola.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <a href="index.html" aria-label="Coca-Cola Home">
+        <img src="img/logo.png" class="logo" alt="Coca-Cola logo" />
+      </a>
+      <div class="toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul class="navigation">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="dashboard.html" class="active">Dashboard</a></li>
+          <li><a href="index.html#redes">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="dashboard">
+      <div class="dashboard-content">
+        <div class="dashboard-title">
+          <div class="title-content">
+            <h1>Dashboard de Ventas</h1>
+            <p>Reporte de ventas y estadísticas</p>
+          </div>
+          <div class="title-image">
+            <img src="img/Logo-fispeq.png" alt="FIS Icon" width="60" height="60">
+          </div>
+        </div>
+        
+        <div class="dashboard-preview">
+          <img src="./img/dash.png" alt="Vista previa del Dashboard de ventas">
+          <a href="http://joseph/Reports/report/CocaCola/DashboardCocaCola" target="_blank" rel="noopener noreferrer" class="dashboard-link">Ver Dashboard Completo</a>
+        </div>
+        <div class="dashboard-stats">
+          <div class="stat-card">
+            <h3>16448500</h3>
+            <p>Unidades vendidas</p>
+          </div>
+          <div class="stat-card">
+            <h3>8064737.5000</h3>
+            <p>Venta Total</p>
+          </div>
+          <div class="stat-card">
+            <h3>3007599.1250</h3>
+            <p>Ganancia Obtenida</p>
+          </div>
+          <div class="stat-card">
+            <h3>1369.29</h3>
+            <p>Margen Operativo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        const menuToggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation')
+        menuToggle.classList.toggle('active')
+        navigation.classList.toggle('active')
+      }
+    </script>
+  </body>
+</html>
+

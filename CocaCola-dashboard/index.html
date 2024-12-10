@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coca-Cola - Descubre el sabor que une al mundo</title>
+    <meta name="description" content="Explora el refrescante mundo de Coca-Cola y descubre cómo su sabor único une a personas de todo el mundo.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <section>
+      <div class="diagonal-bg"></div>
+      <header>
+        <a href="#" aria-label="Coca-Cola Home">
+          <img src="img/logo.png" class="logo" alt="Coca-Cola logo" />
+        </a>
+        <div class="toggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <ul class="navigation">
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>Descubre el sabor que une al mundo</h2>
+          <p>
+            Sumérgete en el refrescante mundo de Coca-Cola, donde cada sorbo es una experiencia única que trasciende fronteras. Nuestro icónico sabor ha estado uniendo a personas de todas las culturas durante generaciones, creando momentos de felicidad compartida y recuerdos inolvidables.
+          </p>
+          <a href="https://www.coca-cola.com/pe/es" target="_blank" rel="noopener noreferrer">Leer Más</a>
+        </div>
+        <img src="img/cocacola6.png" alt="Productos Coca-Cola" class="products">
+      </div>
+
+      <ul class="social" id="redes">
+        <li>
+          <a href="https://www.facebook.com/cocacolaperu" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="https://img.icons8.com/ios-filled/50/000000/facebook-f.png" alt="Facebook icon"/>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/CocaCola_es" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <img src="https://img.icons8.com/ios-filled/50/000000/twitter.png" alt="Twitter icon"/>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/cocacolape/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <img src="https://img.icons8.com/ios/50/000000/instagram-new--v1.png" alt="Instagram icon"/>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <script>
+      function toggleMenu() {
+        const menuToggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation')
+        menuToggle.classList.toggle('active')
+        navigation.classList.toggle('active')
+      }
+    </script>
+  </body>
+</html>
+
